@@ -1,6 +1,7 @@
 # psbuiyoufirstappspringboota2
-
-
+## 2. Creating the Spring Boot Project
+### 8  Demo: Using the API Endpoint
+RestController, tells all payload communication should use json by default
 ```
 @RestController
 @RequestMapping("/api/v1/bikes")
