@@ -42,3 +42,11 @@ add three dependencies
   <version>1.0</version>
 </dependency>
 ```
+
+### Configuring Persistent Properties
+application.properties
+```
+spring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+```
