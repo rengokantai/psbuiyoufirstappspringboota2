@@ -23,3 +23,22 @@ public class BikeController {
   }
 }
 ```
+
+## 3. Adding a Persistence Layer
+### 4 Demo: Adding Persistence Dependencies
+add three dependencies
+```
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.xerial</groupId>
+  <artifactId>sqlite-jdbc</artifactId>
+</dependency>
+<dependency>
+  <groupId>com.zsoltfabok</groupId>
+  <artifactId>sqlite-dialect</artifactId>
+  <version>1.0</version>
+</dependency>
+```
