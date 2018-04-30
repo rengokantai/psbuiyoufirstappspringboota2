@@ -49,4 +49,22 @@ application.properties
 spring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect
 spring.jpa.hibernate.ddl-auto=none
 spring.jpa.show-sql=true
+
+
+spring.datasource.url=jdbc:sqlite.bike.db
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=org.sqlite.JDBC
+```
+
+
+### 5 Creating a JPA Entity
+```
+import javax.persistence.Entity;
+@Entity
+public class Bike {
+  @Id
+  @GenerateValue(strategy=GenerationType.AUTO)
+  private Long id;
+}
 ```
