@@ -43,7 +43,7 @@ add three dependencies
 </dependency>
 ```
 
-### Configuring Persistent Properties
+### 5 Configuring Persistent Properties
 application.properties
 ```
 spring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect
@@ -58,7 +58,7 @@ spring.datasource.driver-class-name=org.sqlite.JDBC
 ```
 
 
-### 5 Creating a JPA Entity
+### 6 Creating a JPA Entity
 ```
 import javax.persistence.Entity;
 @Entity
@@ -66,5 +66,14 @@ public class Bike {
   @Id
   @GenerateValue(strategy=GenerationType.AUTO)
   private Long id;
+}
+```
+
+### 7 Creating a JpaRepository
+```
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BikeRepository extends JpaRepository<Bike,Long>{
+  
 }
 ```
