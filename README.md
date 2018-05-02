@@ -77,3 +77,20 @@ public interface BikeRepository extends JpaRepository<Bike,Long>{
   
 }
 ```
+in BikesController.java
+```
+@AutoWired
+private BikeRepository bikeRepository;
+@GetMapping
+public List<Bike> list(){
+  return bikeRepository.findAll();
+}
+@GetMapping("/{id}")
+public Bike get(@PathVariable("id") long id){
+  return bikeRepository.getOne(id);
+}
+```
+
+
+
+
