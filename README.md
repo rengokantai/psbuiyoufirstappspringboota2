@@ -144,8 +144,8 @@ createBikeRegistration(bike){
 ```
 
 
-## 6.
-### 4 
+## 6. Securing the Application
+### 4 Adding Security Dependencies
 ```
 <dependency>
   <groupId>com.auth0</groupId>
@@ -153,3 +153,11 @@ createBikeRegistration(bike){
   <version>1.0.0-rc.3</version>
 </dependency>
 ```
+
+add
+```
+auth0.issuer:https://dan.auth0.com/
+auth0.apiAudience:http://localhost:8080
+```
+
+### 5 Setting up Spring Security Configuration
