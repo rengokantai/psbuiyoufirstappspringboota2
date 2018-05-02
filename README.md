@@ -126,3 +126,11 @@ content
 package.json
 ```
 "start":"ng serve --proxy-config proxy.conf.json"
+```
+
+### Generating an Angular Service
+```
+const httpOptions {
+  headers: new HttpHeaders({'Content-Type':'application/json'})
+}
+```
