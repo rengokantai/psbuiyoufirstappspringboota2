@@ -134,3 +134,11 @@ const httpOptions {
   headers: new HttpHeaders({'Content-Type':'application/json'})
 }
 ```
+## 5. Finishing the Angular Screens
+### 2 Finishing the API Service Calls
+```
+createBikeRegistration(bike){
+  let body=JSON.stringify(bike);
+  return this.http.post('/server/api/v1/bikes',body,httpOptions);
+}
+```
