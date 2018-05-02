@@ -91,6 +91,9 @@ public Bike get(@PathVariable("id") long id){
 }
 ```
 
-
+### Customizing JSON with Jackson
+```
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+```
 
 
