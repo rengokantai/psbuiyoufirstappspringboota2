@@ -96,4 +96,31 @@ public Bike get(@PathVariable("id") long id){
 @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 ```
 
+```
+@JsonFormat(shape=JsonFormat.Shape.STRING,pattern="MM-dd-yyyy")
+```
 
+## 4. Creating the Angular Project
+### Generating
+```
+ng new pj --routing
+```
+
+### Setting Up a Development Proxy
+in ng project root, add
+```proxy.conf.json```
+content
+```
+{
+  "/server":{
+    "target":"http://localhost:8080",
+    "secure":false,
+    "changeOrigin":true,
+    "logLevel":"debug",
+    "pathRewrite":{
+      "^/server":""
+    }
+  }
+}
+```
+```
