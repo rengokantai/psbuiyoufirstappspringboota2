@@ -249,6 +249,14 @@ export class AuthService {
 
 
 ```
-
+### Setting up the authentication callback
+```
+export class AppComponent {
+  title='app';
+  constructor(private authService:AuthService){
+    authService.handleAuthentication();
+  }
+}
+```
 
 
